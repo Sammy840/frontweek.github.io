@@ -1,7 +1,7 @@
 body{
 	font:15px/1.5 Arial, Helvetica, san serif;
 	padding: 0;
-	margin: 40px;
+	margin: 10px;
 }
 
 .logo{
@@ -233,5 +233,11 @@ footer{
 	#newsletter button{
 		width: 100%;
 		margin-top: 
+	}
+}
+
+@media(max-width: 333px){
+	#newsletter{
+		height: 170px;
 	}
 }
