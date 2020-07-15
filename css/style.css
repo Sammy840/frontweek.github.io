@@ -90,8 +90,9 @@ body{
 }
 
 footer{
+	padding:0 15px;
 	border-radius: 7px;
-	height: 120px;
+	height: 150px;
 	background:#021428;
 	color: #ffffff;
 	margin-top: 10px;
@@ -156,6 +157,46 @@ footer{
 }
 
 @media(max-width: 768px){
+	.main h1{
+	font-size: 1.5rem;
+	}
+
+	.main p{
+	font-size: 0.8rem;
+	}
+
+	.flex{
+	display: grid;
+	grid-template-columns:  repeat(1, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-gap: 20px;
+}
+	#newsletter h1, #newsletter form{
+	float: none;
+	text-align: center;
+	width: 100%;	
+	}
+
+	#newsletter{
+		height: 150px;
+	}
+	
+	#newsletter h1{
+		margin: 0;
+	}
+
+	#newsletter form input[type="email"]{
+		margin-bottom: 5px;
+		width: 97%;
+	}
+
+	#newsletter button{
+		width: 100%;
+		margin-top: 
+	}
+}
+
+@media(max-width: 500px){
 	.main h1{
 	font-size: 1.5rem;
 	}
