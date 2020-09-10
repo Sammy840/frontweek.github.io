@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Welcome</title>
+</head>
+<body>
+
+	<div class="login">
+		<h2>Dev Family</h2>
+
+		<form>
+			<div class="box">
+				<input type="text" id="fname" name="fname" required="">
+				<label>FirstName</label>
+			</div>
+
+			<div class="box">
+				<input type="text" id="lname" name="lname" required="">
+				<label>LastName</label>
+			</div>
+
+			<div class="box">
+				<input type="number" id="age" name="age" required="">
+				<label>Age</label>
+			</div>
+			<div class="buts">				
+                <button onclick="addHtmlTableRow();">Add</button>
+                <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+                <button onclick="removeSelectedRow();">Remove</button>
+			</div>			
+		</form>
+
+		<div id="message" class="message" style="color:red;"></div>
+
+		<div class="container">
+            <div class="tab tab-1">
+                <table id="table" border="1">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Jeff</td>
+                        <td>Leonard</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Swagger</td>
+                        <td>Lee</td>
+                        <td>22</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+	</div>
+<script src="fam.js"></script>
+</body>
+</html>
